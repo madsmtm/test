@@ -61,4 +61,12 @@ This is a normal text paragraph again.
         def test(self):
             return 0
 
-<doc/getting_started.rst>
+
+View relative_
+
+.. _relative link: otherdoc.rst
+
+
+View relative2_
+
+.. _relative2 link: doc/otherdoc.rst
