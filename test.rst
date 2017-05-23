@@ -124,4 +124,4 @@ Used to specify a message reaction
     client.reactToMessage(message_id, MessageReaction.WOW)
 
 
-See :download:`this example script <../example.py>`.
+See :download:`this example script <../example.py>`_
