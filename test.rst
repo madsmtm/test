@@ -7,8 +7,8 @@ Models
 Overview
 ========
 
-- `models.User <user_>`_
-- `models.ThreadType <thread-type_>`_
+- `models.User <models.User(data)>`_
+- `models.ThreadType <#thread-type>`_
 - `models.TypingStatus <typing-status_>`_
 - `models.EmojiSize <emoji-size_>`_
 - `models.ThreadColor <thread-color_>`_
