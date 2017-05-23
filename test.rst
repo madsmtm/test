@@ -123,3 +123,5 @@ Used to specify a message reaction
     message_id = client.sendMessage('Wow', thread_id=user_id, thread_type=ThreadType.USER)
     client.reactToMessage(message_id, MessageReaction.WOW)
 
+
+See :download:`this example script <../example.py>`.
