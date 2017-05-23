@@ -7,15 +7,125 @@ Models
 Overview
 ========
 
-- `Client.(data) <client>`_
+- `models.User <#user>`_
+- `models.ThreadType <#thread-type>`_
+- `models.TypingStatus <#typing-status>`_
+- `models.EmojiSize <#emoji-size>`_
+- `models.ThreadColor <#thread-color>`_
+- `models.MessageReaction <#message-reaction>`_
+
+.. __: user
+models.User(data)
+-----------------
+
+[MISSING]
+
+.. __: thread-type
+models.ThreadType(Enum)
+-----------------------
+
+**Values:**
+
+- ``USER``
+- ``GROUP``
+
+Used to specify what type of Facebook thread is being used
+
+**Example Usage**
+
+.. code-block:: python
+
+    client.sendMessage('Hi there USER', thread_id=user_id, thread_type=ThreadType.USER)
+    client.sendMessage('Hi there GROUP', thread_id=group_id, thread_type=ThreadType.GROUP)
+
+    
+.. __: typing-status
+models.TypingStatus(Enum)
+-------------------------
+
+**Values:**
+
+- ``STOPPED``
+- ``TYPING``
+
+Used to specify whether the user is typing or has stopped typing
+
+**Example Usage**
+
+.. code-block:: python
+
+    client.setTypingStatus(TypingStatus.TYPING, thread_id=user_id, thread_type=ThreadType.USER)
+
+    
+.. __: emoji-size
+models.EmojiSize(Enum)
+----------------------
+
+**Values:**
+
+- ``LARGE``
+- ``MEDIUM``
+- ``SMALL``
+
+Used to specify the size of a sent emoji
+
+**Example Usage**
+
+.. code-block:: python
+
+    client.setEmoji('👍', size=EmojiSize.LARGE, thread_id=user_id, thread_type=ThreadType.USER)
 
 
-.. __: client
-`Client(email, password, user_agent-None, max_retries-5, session_cookies-None, logging_level-logging.INFO, set_default_events-True)`_
--------------------------------------------------------------------------------------------------------------------------------------
+.. __: thread-color
+models.ThreadColor(Enum)
+------------------------
 
-.. _`Client(email, password, user_agent-None, max_retries-5, session_cookies-None, logging_level-logging.INFO, set_default_events-True)`: #client
+**Values:**
 
-hyperlink-name_
+- ``MESSENGER_BLUE``
+- ``VIKING``
+- ``GOLDEN_POPPY``
+- ``RADICAL_RED``
+- ``SHOCKING``
+- ``PICTON_BLUE``
+- ``FREE_SPEECH_GREEN``
+- ``PUMPKIN``
+- ``LIGHT_CORAL``
+- ``MEDIUM_SLATE_BLUE``
+- ``DEEP_SKY_BLUE``
+- ``FERN``
+- ``CAMEO``
+- ``BRILLIANT_ROSE``
+- ``BILOBA_FLOWER``
 
+Used to specify a thread colors
+
+**Example Usage**
+
+.. code-block:: python
+
+    client.changeThreadColor(ThreadColor.BILOBA_FLOWER, thread_id=group_id)
+
+.. __: message-reaction
+models.MessageReaction(Enum)
+----------------------------
+
+**Values:**
+
+- ``LOVE``
+- ``SMILE``
+- ``WOW``
+- ``SAD``
+- ``ANGRY``
+- ``YES``
+- ``NO``
+
+Used to specify a message reaction
+
+**Example Usage**
+
+.. code-block:: python
+
+    message_id = client.sendMessage('Wow', thread_id=user_id, thread_type=ThreadType.USER)
+    client.reactToMessage(message_id, MessageReaction.WOW)
 
