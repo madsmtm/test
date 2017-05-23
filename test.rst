@@ -60,3 +60,5 @@ This is a normal text paragraph again.
     class A(object):
         def test(self):
             return 0
+
+`doc/getting_started.rst`_
