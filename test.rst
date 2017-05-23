@@ -14,13 +14,13 @@ Overview
 - `models.ThreadColor <#thread-color>`_
 - `models.MessageReaction <#message-reaction>`_
 
-.. __: user
+.. _user:
 models.User(data)
 -----------------
 
 [MISSING]
 
-.. __: thread-type
+.. _thread-type:
 models.ThreadType(Enum)
 -----------------------
 
@@ -39,7 +39,7 @@ Used to specify what type of Facebook thread is being used
     client.sendMessage('Hi there GROUP', thread_id=group_id, thread_type=ThreadType.GROUP)
 
     
-.. __: typing-status
+.. _typing-status:
 models.TypingStatus(Enum)
 -------------------------
 
@@ -57,7 +57,7 @@ Used to specify whether the user is typing or has stopped typing
     client.setTypingStatus(TypingStatus.TYPING, thread_id=user_id, thread_type=ThreadType.USER)
 
     
-.. __: emoji-size
+.. _emoji-size:
 models.EmojiSize(Enum)
 ----------------------
 
@@ -76,7 +76,7 @@ Used to specify the size of a sent emoji
     client.setEmoji('👍', size=EmojiSize.LARGE, thread_id=user_id, thread_type=ThreadType.USER)
 
 
-.. __: thread-color
+.. _thread-color:
 models.ThreadColor(Enum)
 ------------------------
 
@@ -106,7 +106,7 @@ Used to specify a thread colors
 
     client.changeThreadColor(ThreadColor.BILOBA_FLOWER, thread_id=group_id)
 
-.. __: message-reaction
+.. _message-reaction:
 models.MessageReaction(Enum)
 ----------------------------
 
