@@ -1,5 +1,16 @@
 Test: `<docs/CONTRIBUTING.md>`__
 
+======
+Models
+======
+
+fbchat.models.User(data)
+========================
+
+fbchat.models.User(data)
+------------------------
+
+
 .. function:: food(x)
               food(y, z)
               food(x, y, z)
