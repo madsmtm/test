@@ -128,16 +128,16 @@ Example Usage
     message_id = client.sendMessage('Wow', thread_id=user_id, thread_type=ThreadType.USER)
     client.reactToMessage(message_id, MessageReaction.WOW)
 
-------
+======
 Models
-------
+======
 
 ``fbchat`` uses these models as both input parameters and return values.
 
 Overview
 ========
 
-- ``_
+- _
 - `Client.(data)`_
 - `Client(data)`_
 - `Client(data)`_
