@@ -2,7 +2,7 @@
 Models
 ======
 
-`fbchat` uses these models as both input parameters and return values.
+``fbchat`` uses these models as both input parameters and return values.
 
 Index
 =====
@@ -23,8 +23,8 @@ models.ThreadType(Enum)
 
 **Values:**
 
-- `USER`
-- `GROUP`
+- ``USER``
+- ``GROUP``
 
 Used to specify what type of Facebook thread is being used
 
@@ -42,8 +42,8 @@ models.TypingStatus(Enum)
 
 **Values:**
 
-- `STOPPED`
-- `TYPING`
+- ``STOPPED``
+- ``TYPING``
 
 Used to specify whether the user is typing or has stopped typing
 
@@ -60,9 +60,9 @@ models.EmojiSize(Enum)
 
 **Values:**
 
-- `LARGE`
-- `MEDIUM`
-- `SMALL`
+- ``LARGE``
+- ``MEDIUM``
+- ``SMALL``
 
 Used to specify the size of a sent emoji
 
@@ -79,21 +79,21 @@ models.ThreadColor(Enum)
 
 **Values:**
 
-- `MESSENGER_BLUE`
-- `VIKING`
-- `GOLDEN_POPPY`
-- `RADICAL_RED`
-- `SHOCKING`
-- `PICTON_BLUE`
-- `FREE_SPEECH_GREEN`
-- `PUMPKIN`
-- `LIGHT_CORAL`
-- `MEDIUM_SLATE_BLUE`
-- `DEEP_SKY_BLUE`
-- `FERN`
-- `CAMEO`
-- `BRILLIANT_ROSE`
-- `BILOBA_FLOWER`
+- ``MESSENGER_BLUE``
+- ``VIKING``
+- ``GOLDEN_POPPY``
+- ``RADICAL_RED``
+- ``SHOCKING``
+- ``PICTON_BLUE``
+- ``FREE_SPEECH_GREEN``
+- ``PUMPKIN``
+- ``LIGHT_CORAL``
+- ``MEDIUM_SLATE_BLUE``
+- ``DEEP_SKY_BLUE``
+- ``FERN``
+- ``CAMEO``
+- ``BRILLIANT_ROSE``
+- ``BILOBA_FLOWER``
 
 Used to specify a thread colors
 
@@ -110,13 +110,13 @@ models.MessageReaction(Enum)
 
 **Values:**
 
-- `LOVE`
-- `SMILE`
-- `WOW`
-- `SAD`
-- `ANGRY`
-- `YES`
-- `NO`
+- ``LOVE``
+- ``SMILE``
+- ``WOW``
+- ``SAD``
+- ``ANGRY``
+- ``YES``
+- ``NO``
 
 Used to specify a message reaction
 
