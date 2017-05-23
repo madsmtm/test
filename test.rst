@@ -52,3 +52,11 @@ This is a normal text paragraph. The next paragraph is a code sample
    It can span multiple lines.
 
 This is a normal text paragraph again.
+
+.. code-block:: python
+
+    test = 2
+    test2 = 3
+    class A(object):
+        def test(self):
+            return 0
