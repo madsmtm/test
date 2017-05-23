@@ -1,3 +1,5 @@
+Test: `<docs/CONTRIBUTING.md>`__
+
 .. function:: food(x)
               food(y, z)
               food(x, y, z)
