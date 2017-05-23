@@ -61,4 +61,4 @@ This is a normal text paragraph again.
         def test(self):
             return 0
 
-doc/getting_started.rst_
+<doc/getting_started.rst>
